@@ -1,0 +1,9 @@
+
+
+library(git2r)
+repo <- repository(".")
+add(repo, "my_data.csv")
+status(repo)
+commit(repo, "Updated my_data.csv")
+push(repo, "origin", "main")
+

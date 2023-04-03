@@ -1,0 +1,7 @@
+file.create(".gitignore")
+cat(".Rproj.user/", file = ".gitignore", append = TRUE)
+cat("indhu-automate.Rproj", file = ".gitignore", append = TRUE)
+add(repo, ".gitignore")
+commit(repo, "Added .gitignore file")
+push(repo, "origin", "master")
+
